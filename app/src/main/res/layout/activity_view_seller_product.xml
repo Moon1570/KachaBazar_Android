@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewSellerProductActivity"
+    android:id="@+id/drawer_layout"
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity"
+        tools:openDrawer="start">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/foreground" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/view_seller_product_image"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="55dp"
+            android:layout_centerHorizontal="true"
+            >
+
+        </ImageView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/foreground"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/view_seller_product_image"
+            android:layout_marginBottom="5dp"
+            android:outlineAmbientShadowColor="@color/foreground"
+            />
+
+        <TextView
+            android:id="@+id/view_seller_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_seller_product_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"
+            android:text="Name"></TextView>
+
+        <TextView
+            android:id="@+id/view_seller_product_govt_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_seller_product_name"
+            android:text="Government Price"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/view_seller_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_seller_product_govt_price"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black"
+            android:text="Product Price"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/view_seller_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_seller_product_price"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black"
+            android:text="Product Description"></TextView>
+        <TextView
+            android:id="@+id/view_seller_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_seller_product_description"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black"
+            android:text="By Seller"></TextView>
+
+        <Button
+            android:id="@+id/btn_buy_from_seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_seller_name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@color/foreground"
+            android:padding="10dp"
+            android:text="কিনুন"
+            android:elevation="4dp"
+            android:textAllCaps="false"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

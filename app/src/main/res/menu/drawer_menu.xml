@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/ic_shop"
+            android:title="আমাদের বাজার" />
+
+
+        <item
+            android:id="@+id/nav_seller_shop"
+            android:icon="@drawable/ic_seller"
+            android:title="বিক্রেতাদের বাজার" />
+
+        <item
+            android:id="@+id/nav_local"
+            android:icon="@drawable/ic_local"
+            android:title="স্থানীয় বাজার" />
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="বাজার খুজুন" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="প্রফাইল" />
+
+        <item
+            android:id="@+id/nav_sell"
+            android:icon="@drawable/ic_sell"
+            android:title="বিক্রি করুন" />
+
+
+
+    </group>
+
+    <item android:title="যোগাযোগ">
+
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact"
+                android:title="আমাদের সাথে যোগাযোগ" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="আমাদের সম্পরকে জানুন" />
+        </menu>
+
+    </item>
+
+    <item android:title="প্রমাণীকরণ">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_login"
+                android:title="লগ ইন করুন" />
+
+        </menu>
+
+    </item>
+
+
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddSellerProductActivity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/toolbar"
+                    android:background="@color/background"
+                    app:titleTextColor="@color/foreground"
+                    style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    android:elevation="4dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/add_seller_product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="100dp"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+                <Button
+                    android:id="@+id/btn_add_seller_product_confirm_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm"
+                    android:layout_below="@id/add_seller_product_image"
+                    />
+
+                <EditText
+                    android:id="@+id/add_seller_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Product Name"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/btn_add_seller_product_confirm_image"
+                    />
+
+                <EditText
+                    android:id="@+id/add_seller_product_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Product Description"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/add_seller_product_name"
+                    />
+
+                <EditText
+                    android:id="@+id/add_seller_product_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Product Quantity"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/add_seller_product_desc"
+                    />
+
+                <Spinner
+                    android:id="@+id/add_seller_product_spinner_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/add_seller_product_quantity"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/add_seller_product_govt_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_seller_product_spinner_unit"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:text="Government Price : 150 /="
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/add_seller_product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Product Price"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/add_seller_product_govt_price"
+                    />
+
+
+
+                <Spinner
+                    android:id="@+id/add_seller_product_category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_seller_product_price"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/add_seller_product_subcategory_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_seller_product_category_spinner"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+
+                <Button
+                    android:id="@+id/btn_add_seller_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:background="@color/foreground"
+                    android:textColor="@color/background"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/add_seller_product_subcategory_spinner"
+
+                    />
+            </RelativeLayout>
+
+</ScrollView>

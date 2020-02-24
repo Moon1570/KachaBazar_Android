@@ -1,0 +1,2 @@
+include ':app', ':picasso-2.5.02'
+rootProject.name='ecommerce'

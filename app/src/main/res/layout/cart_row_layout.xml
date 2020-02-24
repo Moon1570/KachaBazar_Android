@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/cart_sl_no"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceLargePopupMenu"
+        android:textColor="@color/foreground"
+        android:textSize="20dp"
+
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+
+        ></TextView>
+    <TextView
+        android:id="@+id/cart_product_name"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Wolf"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceLargePopupMenu"
+        android:textColor="@color/foreground"
+        android:textSize="20dp"
+
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+
+        ></TextView>
+    <TextView
+        android:id="@+id/cart_product_price_list"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="150"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceLargePopupMenu"
+        android:textColor="@color/foreground"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+
+        ></TextView>
+    <TextView
+        android:id="@+id/cart_subtotal"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="1500"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceLargePopupMenu"
+        android:textColor="@color/foreground"
+        android:textSize="20dp"
+
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+
+        ></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/foreground"
+        />
+
+</RelativeLayout>

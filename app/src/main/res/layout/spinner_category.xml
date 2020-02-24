@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/seller_product_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/foreground"
+        android:text="Wolf"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceLargePopupMenu"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:letterSpacing=".05"
+        ></TextView>
+
+
+</LinearLayout>

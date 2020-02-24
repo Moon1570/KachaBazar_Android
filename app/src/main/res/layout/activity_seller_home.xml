@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerHomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/background"
+        app:titleTextColor="@color/foreground"
+        style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"
+        />
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:background="@color/foreground"
+        android:layout_marginTop="55dp"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/seller_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Seller"
+        android:layout_below="@id/i1"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/foreground"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/seller_welcome"
+        android:layout_marginTop="5dp"
+        android:background="@color/foreground"
+        android:elevation="5dp"
+
+        />
+
+
+    <ListView
+        android:id="@+id/seller_home_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginBottom="50dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+
+
+    <Button
+        android:id="@+id/btn_seller_addproduct"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@color/foreground"
+        android:text="Add Product"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="false"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btn_seller_logout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@color/foreground"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

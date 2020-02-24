@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity"
+        tools:openDrawer="start">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/background"
+            app:titleTextColor="@color/foreground"
+            style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/reg_select_image"
+            android:layout_width="163dp"
+            android:layout_height="146dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:src="@mipmap/ic_avater" />
+
+        <Button
+            android:id="@+id/btn_reg_confirm_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ছবি নিশ্চিত করুণ"
+            android:layout_below="@id/reg_select_image"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            />
+
+
+        <!-- Email Label -->
+
+        <EditText
+            android:id="@+id/reg_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_reg_confirm_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="নামের প্রথম অংশ"
+            android:inputType="text" />
+
+        <!-- Password Label -->
+
+        <EditText
+            android:id="@+id/reg_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_first_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="নামের শেষ অংশ"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/reg_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_last_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="মোবাইল নাম্বার"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/reg_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_phone"
+            android:layout_centerHorizontal="true"
+            android:hint="জন্ম তারিখ"
+            android:layout_margin="10dp"
+            android:letterSpacing=".05"
+            />
+
+        <Spinner
+            android:id="@+id/reg_division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/reg_dob"
+            />
+
+        <Spinner
+            android:id="@+id/reg_district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/reg_division"
+            />
+
+        <Spinner
+            android:id="@+id/reg_upazilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/reg_district"
+            />
+
+        <Spinner
+            android:id="@+id/reg_union"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/reg_upazilla"
+            />
+
+        <EditText
+            android:id="@+id/reg_village"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_union"
+            android:hint="গ্রাম"
+            />
+        <EditText
+            android:id="@+id/reg_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_village"
+            android:hint="রোড"
+            />
+        <EditText
+            android:id="@+id/reg_zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_street"
+            android:hint="জিপ কোড"
+            />
+        <EditText
+            android:id="@+id/reg_holding_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_zipcode"
+            android:hint="হোল্ডিং নাম্বার"
+            />
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_holding_number"
+            android:inputType="textPassword"
+            android:hint="পাসওয়ার্ড"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn_reg_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_password"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/foreground"
+            android:elevation="5dp"
+            android:padding="12dp"
+            android:text="রেজিস্ট্রেশান"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/background"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_reg_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_reg_reg"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:background="@color/foreground"
+            android:text="অ্যাকাউন্ট আছে ?"
+            android:elevation="5dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>
